@@ -288,3 +288,7 @@ h1{
     margin: 20px 0;
     text-shadow: 3px 3px 0px var(--main-color)
 }
+
+.choose .fix-p{
+    width: 80%;
+}
