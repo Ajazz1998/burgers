@@ -24,6 +24,14 @@ a{
     text-decoration: none;
 }
 
+.btn{
+    background: transparent;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
 h3{
     font-size: 29px;
     font-weight: 100;
@@ -48,6 +56,11 @@ h1{
     grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .flex-center{
     display: flex;
     justify-content: center;
@@ -64,9 +77,12 @@ h1{
 
 .header_container{
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     padding: 0 200px;
     background: #000;
+    z-index: 1;
     border-bottom: var(--main-color) 2px solid;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.49);
 }
@@ -143,4 +159,132 @@ h1{
 
 .header .container .content_img{
     margin-right: -20px;
+}
+
+.offer{
+    padding: 80px 0;
+}
+
+.o-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.o-content{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("/img/banner-1.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 430px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+
+.o-content:hover{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/img/banner-1.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 430px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+
+.o-content h3, .o-content-2 h3{
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.o-content-2 h3{
+    margin: 2px 0;
+
+}
+
+.o-content .btn{
+    position: absolute;
+    bottom: 20px;
+    background: var(--second-color);
+    padding: 12px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid var(--second-color);
+}
+
+.o-content .btn:hover{
+    transition: 500ms;
+    background: transparent;
+    border: 2px solid var(--second-color);
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.gri-1, .gri-2{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("/img/banner-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.gri-1:hover, .gri-2{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("/img/banner-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.gri-2{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("/img/banner-3.jpg");
+    margin-top: 10px;
+}
+
+.gri-2:hover{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("/img/banner-3.jpg");
+    margin-top: 10px;
+}
+
+
+.choose{
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.c-img{
+    background: url("/img/title-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.c-img h3{
+    font-weight: 700;
+    color: var(--third-color);
+}
+
+.choose h1{
+    font-size: 3.6rem;
+    margin: 20px 0;
+    text-shadow: 3px 3px 0px var(--main-color)
 }
