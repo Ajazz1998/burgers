@@ -290,7 +290,7 @@ h1{
     color: var(--third-color);
 }
 
-.choose h1{
+.choose h1, .con_container h1   {
     font-size: 3.6rem;
     margin: 20px 0;
     text-shadow: 3px 3px 0px var(--main-color)
@@ -426,6 +426,70 @@ h1{
 
 .menu .box-2 .drink h3{
     color: var(--main-color);
+}
+
+.contact{
+    background: url('/img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.con_container{
+    padding: 80px;
+}
+
+.con_container h1{
+    text-align: center;
+}
+
+input[type]:focus, textarea:focus, .elementor-field-textual:focus {
+    outline: none;
+}
+
+input[type], option[value], .elementor-field-textual, textarea {
+    border: 2px solid #ccc;
+    padding: 20px 10px;
+    
+    border-radius: 10px;    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;   
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 6px 0;
+}
+
+input[type =text]{
+    width: 318px;
+}
+
+input[type=email]{
+    width: 640px;
+}
+
+input[type=number], input[type=date], .elementor-field-textual {
+    margin: 0 10px;
+    width: 200px;
+}
+
+input[type=number]{
+    margin-left: 0;
+}
+
+input[placeholder], textarea, .elementor-field-textual{
+    font-size:17px;
+    font-weight: 700;
+}
+
+textarea{
+    width: 640px;
+    padding: 20px 10px;
+    height: 80px;
+}
+
+.selector{
+    display: flex;
+    margin: 10px 0;
 }
 
 
