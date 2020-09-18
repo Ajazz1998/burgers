@@ -59,6 +59,7 @@ h1{
 .grid-3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
 }
 
 .flex-center{
@@ -208,11 +209,11 @@ h1{
 
 }
 
-.o-content .btn{
+.o-content .btn, .c-content .box-1 .btn{
     position: absolute;
     bottom: 20px;
     background: var(--second-color);
-    padding: 12px 15px;
+    padding: 12px 25px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -222,7 +223,7 @@ h1{
     border: 2px solid var(--second-color);
 }
 
-.o-content .btn:hover{
+.o-content .btn:hover, .c-content .btn:hover{
     transition: 500ms;
     background: transparent;
     border: 2px solid var(--second-color);
@@ -272,13 +273,18 @@ h1{
     text-align: center;
 }
 
+.choose p{
+    font-size: 13px;
+    margin: 10px 0;
+}
+
 .c-img{
     background: url("/img/title-bg.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.c-img h3{
+.c-img h3, .c-content h3{
     font-weight: 700;
     color: var(--third-color);
 }
@@ -291,4 +297,24 @@ h1{
 
 .choose .fix-p{
     width: 80%;
+    margin: 20px auto;
+    margin-bottom: 30px;
+}
+
+
+.c-content img{
+    width: 95%;
+    height: 240px;
+}
+
+.c-content .box-1 .btn{
+    position: relative;
+    bottom: 0;
+    background-color: var(--btn-background);
+}
+
+.c-content .box-1 .btn:hover{
+    background: transparent;
+    border: 2px solid var(--btn-background);
+    color: var(--btn-background);
 }
