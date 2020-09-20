@@ -762,3 +762,54 @@ form{
 }
 
 
+  /* Animation */
+    /*-------------------------------*/
+
+    .js--wp-2,
+    .js--wp-3,
+    .js--wp-25,
+    .js--wp-footerleft,
+    .js--wp-4,
+    .js--wp-copy{
+        opacity: 0;
+        transition: all 300ms ease-in;
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+}
+
+.js--wp-nav{
+    opacity: 0;
+    transition: all 700ms ease-in;
+    -webkit-transition: all 700ms ease-in;
+    -moz-transition: all 700ms ease-in;
+    -ms-transition: all 700ms ease-in;
+    -o-transition: all 700ms ease-in;
+}
+
+
+.js--wp-1 {
+    transform: scale(0);
+    transition: all 700ms ease-in;
+    -webkit-transition: all 700ms ease-in;
+    -moz-transition: all 700ms ease-in;
+    -ms-transition: all 700ms ease-in;
+    -o-transition: all 700ms ease-in;
+}
+    .js--wp-2.animated,
+    .js--wp-25.animated,
+    .js--wp-nav.animated,
+    .js--wp-copy.animated,
+    .js--wp-footerleft.animated,
+    .js--wp-4.animated,
+    .js--wp-3.animated {
+        opacity: 1;
+}
+
+.js--wp-1.animated{
+    transform: scale(1);
+
+}
+
+

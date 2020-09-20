@@ -7,14 +7,13 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="/Resources/animate.css">
-     <link rel="stylesheet" type="text/css" href="/Resources/queries.css">
     <link rel="stylesheet" href="/style.css">
     <title>Burger</title>
 </head>
 <body>
     
     <header class="header" id="home">
-        <div class="header_container">
+        <div class="header_container js--wp-nav">
             <div class="logo">
                 <img src="/img/logo-1.png" alt="log">
             </div>
@@ -34,19 +33,19 @@
         </div>
 
         <div class="container grid-2 row flex-center">
-            <div class="content">
+            <div class="content js--wp-3">
                 <h3>GET YOUR BELLY FULL THIS WEEKEND</h3>
                 <h1>THE MIGHTY <span>BURGER</span> </h1>
             </div>
 
-            <div class="content_img">
-                <img src="/img/burger-deal.png" alt="">
+            <div class="content_img js--wp-1">
+                <img src="/img/burger-deal.png" alt="burger">
             </div>
         </div>        
     </header>
 
     <section class="offer">
-        <div class="o-container row">
+        <div class="o-container row js--wp-copy">
             <div class="o-content">
                 <p>TODAY'S SPECIAL</p>
                 <h3>GRILLED BURGER WITH SALAD AND FRIES</h3>
@@ -74,7 +73,7 @@
             <h1>CHOOSE & ENJOY</h1>
             <p class="fix-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             
-            <div class="c-content grid-3">
+            <div class="c-content grid-3 js--wp-5">
                 <div class="box-1">
                     <img src="/img/burger-1.png" alt="burger">
                     <h3>CRISPY CHICKEN</h3>
@@ -103,7 +102,7 @@
         <div class="row">
             <h1>CHECK MENU</h1>
 
-            <div class="grid-3 m-container">
+            <div class="grid-3 m-container js--wp-25">
 
                 <div class="box-1">
                     <img src="/img/burder.png" alt="burger">
@@ -264,7 +263,7 @@
         <div class="con_container row">
             <h1>RESERVE TABLE</h1>
 
-            <form class="form flex-center">
+            <form class="form flex-center js--wp-4">
                 <div>
                     <div class="name">
                         <input type="text" placeholder="First Name">
@@ -300,7 +299,7 @@
     </section>
 
     <footer class="footer">
-        <div class="footer_container row flex-center">
+        <div class="footer_container row flex-center js--wp-footerleft">
             <div>
                 <a href="/index.html"><img src="/img/logo-1.png" alt="logo"></a>
                 <ul class="f_contact">
@@ -322,7 +321,9 @@
         </div>    
     </footer>
 
-    <script src="/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="/Resources/jquery.waypoints.min.js"></script>  
+    <script src="/script.js"></script>
 </body>
 </html>
